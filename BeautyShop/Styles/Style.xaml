@@ -1,0 +1,39 @@
+﻿<ResourceDictionary xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    
+    <SolidColorBrush x:Key="PrimaryColor" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="SecondaryColor" Color="#E1E4FF"/>
+    <SolidColorBrush x:Key="AccentColor" Color="#FF4A6D"/>
+    <SolidColorBrush x:Key="DividerColor" Color="#A9A9A9"/>
+
+    <Style TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Tahoma"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="TextTrimming" Value="CharacterEllipsis"/>
+    </Style>
+    
+    <Style TargetType="Image">
+        <Setter Property="Stretch" Value="Uniform"/>
+        <Setter Property="UseLayoutRounding" Value="True"/>
+        <Setter Property="RenderOptions.CachingHint" Value="Cache"/>
+        <Setter Property="RenderOptions.BitmapScalingMode" Value="Fant"/>
+    </Style>
+    
+    <!--Здесь ещё нужны мощные стили но в рамках заданных цветов и анимации плавные-->
+    <Style TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="8">
+                        <ContentPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Frame">
+        <Setter Property="NavigationUIVisibility" Value="Hidden"/>
+    </Style>
+
+</ResourceDictionary>
